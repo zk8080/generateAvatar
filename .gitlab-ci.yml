@@ -1,0 +1,18 @@
+doc:
+  tags: 
+    - docs
+  cache:
+    key:
+      files:
+        # 根据文件，配置你的缓存。最多配置两个文件
+        # 此处配置的意义：如果yarn.lock文件没有改变，则，.umi, node_modules文件使用上次的缓存
+        - yarn.lock
+    paths:
+      - .umi
+      - node_modules
+  only:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /docs/
+  script:
+    - pwd
+    - tmdoc
