@@ -1,0 +1,6 @@
+{
+  "catagory": ["Trialos", "前端组件"],
+  "name": "动态生成头像图片",
+  "description": "根据用户昵称和头像动态生成群组头像图片",
+  "authors": ["kang.zhang"]
+}
